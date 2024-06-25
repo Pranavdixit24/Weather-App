@@ -11,7 +11,7 @@ import wind_icon from '../../assets/wind.png'
 
 
 const WeatherApp = () => {
-    let api_key="f286fd9ac2e786579832643030488317"
+    let api_key=import.meta.env.VITE_API_KEY;
     const [icon,setIcon] = useState(rain_icon);
 
     const search =async()=>{
